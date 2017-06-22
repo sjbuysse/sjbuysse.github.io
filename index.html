@@ -1,85 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/400px.css">
-    <link rel="stylesheet" href="styles/640px.css">
-    <link rel="stylesheet" href="styles/768px.css">
-    <link rel="stylesheet" href="styles/850px.css">
-    <link rel="stylesheet" href="styles/modal.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="portfolioApp">
-    <!--[if lte IE 8]>
+<!doctype html> <html> <head> <meta charset="utf-8"> <title></title> <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.ca451f59.css"> </head> <body ng-app="portfolioApp"> <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="container">
-        <header>
-            <a href="#" class="logo">
-                <div class="logo__style-blue logo__style-blue__inverted">sb</div>
-            </a>
-            <div class="header-title">
-                <h1>Simon Buysse</h1>
-                <h3>Front-end web developer</h3>
-                <a href="mailto:buysse.simon@gmail.com" class="email">buysse.simon[at]gmail.com</a>
-            </div>
-            <hr class="header-line">
-        </header>
-        <div ng-include="'views/introduction.html'" class="introduction"></div>
-        <section ng-include="'views/featuredwork.html'" class="featured-work" 
-            ng-controller="FeaturedWorkCtrl as featuredWork"></section>
-
-        <!-- Modal for featured work images -->
-        <div id="myModal" class="modal">
-
-          <!-- The Close Button on the modal-->
-          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-          <!-- Modal Content (The Image) -->
-          <img class="modal-content" id="myModal-img01">
-
-          <!-- Modal Caption (Image Text) -->
-          <div id="myModal-caption"></div>
-
-        </div>
-    </div>
-
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+    <![endif]--> <!-- Add your site or application content here --> <div class="container"> <header> <a href="#" class="logo"> <div class="logo__style-blue logo__style-blue__inverted">sb</div> </a> <div class="header-title"> <h1>Simon Buysse</h1> <h3>Front-end web developer</h3> <a href="mailto:buysse.simon@gmail.com" class="email">buysse.simon[at]gmail.com</a> </div> <hr class="header-line"> </header> <div ng-include="'views/introduction.html'" class="introduction"></div> <section ng-include="'views/featuredwork.html'" class="featured-work" ng-controller="FeaturedWorkCtrl as featuredWork"></section> <!-- Modal for featured work images --> <div id="myModal" class="modal"> <!-- The Close Button on the modal--> <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span> <!-- Modal Content (The Image) --> <img class="modal-content" id="myModal-img01"> <!-- Modal Caption (Image Text) --> <div id="myModal-caption"></div> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
        ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/featuredWork.js"></script>
-        <!-- endbuild -->
-</body>
-</html>
+       ga('send', 'pageview');</script> <script src="scripts/vendor.1413c46e.js"></script> <script src="scripts/scripts.ac6c000b.js"></script> </body> </html>
